@@ -46,7 +46,7 @@ public class Student implements Comparable<Student> {
 		this.grade = grade;
 	}
 
-	// this should compare and sort by grade unless the grades are the name in which
+	// this should compare and sort by grade unless the grades are the same in which
 	// case they'll be sorted alphabetically
 	@Override
 	public int compareTo(Student that) {
