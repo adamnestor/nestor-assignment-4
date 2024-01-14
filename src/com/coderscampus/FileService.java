@@ -22,13 +22,11 @@ public class FileService {
 		try {
 			int i = 0;
 			String line = null;
-			// we need to change the 4 to however many lines there are
 			Student[] students = new Student[count];
 			fileReader = new BufferedReader(new FileReader("student-master-list.csv"));
 
 			while ((line = fileReader.readLine()) != null) {
 				String[] lineData = line.split(",");
-				// this requires a new student constructor
 				Student student = new Student(lineData[0], lineData[1], lineData[2], lineData[3]);
 				students[i] = student;
 				i++;
