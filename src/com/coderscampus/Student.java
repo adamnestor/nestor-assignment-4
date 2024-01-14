@@ -57,7 +57,7 @@ public class Student implements Comparable<Student> {
 		}
 
 	}
-	
+
 	// BufferedWriter wants a String instead of Student type
 	public String toCSVString() {
 		return getStudentID() + "," + getStudentName() + "," + getCourse() + "," + getGrade();

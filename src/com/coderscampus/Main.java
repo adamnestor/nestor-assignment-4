@@ -17,12 +17,12 @@ public class Main {
 		try (BufferedWriter writerCourse1 = new BufferedWriter(new FileWriter("course1.csv"));
 				BufferedWriter writerCourse2 = new BufferedWriter(new FileWriter("course2.csv"));
 				BufferedWriter writerCourse3 = new BufferedWriter(new FileWriter("course3.csv"));) {
-			
+
 			// write header line into each file
 			writerCourse1.write("Student ID,Student Name,Course,Grade \n");
 			writerCourse2.write("Student ID,Student Name,Course,Grade \n");
 			writerCourse3.write("Student ID,Student Name,Course,Grade \n");
-			
+
 			// write students sorted by course
 			for (Student student : students) {
 				if (student.getCourse().contains("COMPSCI")) {
